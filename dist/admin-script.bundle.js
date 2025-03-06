@@ -1,0 +1,1 @@
+jQuery(document).ready((function(s){s("#adminmenu li a").hover((function(){s(this).css("transform","scale(1.05)")}),(function(){s(this).css("transform","scale(1)")})),s(".button-primary").on("click",(function(){s(this).css("box-shadow","0px 4px 8px rgba(255, 79, 94, 0.5)"),setTimeout((()=>{s(this).css("box-shadow","0px 3px 6px rgba(255, 79, 94, 0.3)")}),200)}))}));

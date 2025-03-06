@@ -1,0 +1,26 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore temporary files
+*.tmp
+
+# Ignore compiled files
+*.o
+*.so
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore Composer vendor directory
+vendor/
+
+# Ignore WordPress core files
+wp-admin/
+wp-includes/
+
+# Ignore WordPress configuration files
+wp-config.php

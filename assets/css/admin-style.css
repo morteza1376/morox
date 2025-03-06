@@ -1,0 +1,721 @@
+/* Generated for Firefox v135.0 on Windows */
+@font-face {
+    font-family: "Vazir";
+    src: url("../../fonts/100.woff2") format("woff2");
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Vazir";
+    src: url("../../fonts/300.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Vazir";
+    src: url("../../fonts/400.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Vazir";
+    src: url("../../fonts/500.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Vazir";
+    src: url("../../fonts/700.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Vazir";
+    src: url("../../fonts/900.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+}
+
+:root {
+    --primary-color: #705192;
+    --secondary-color: #363d48;
+}
+
+/* تغییر رنگ و طراحی کلی سایدبار */
+#adminmenu {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) !important;
+    border-radius: 12px !important;
+    padding: 0 !important;
+    margin: 10px !important;
+    transition: all 0.3s ease;
+}
+
+/* تغییر طراحی آیتم‌های سایدبار */
+#adminmenu li {
+    border-radius: 8px !important;
+    /* margin-bottom: 5px !important; */
+    /* overflow: hidden; */
+}
+
+#adminmenu a {
+    color: white !important;
+    font-weight: 500;
+    padding: 6px 4px !important;
+    transition: all 0.3s ease;
+}
+
+/* تغییر طراحی آیتم فعال */
+#adminmenu li.current a,
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu {
+    background: rgba(255, 255, 255, 0.2) !important;
+    border-radius: 8px !important;
+}
+
+/* افکت هاور برای آیتم‌های سایدبار */
+#adminmenu li:hover {
+    /* background: rgba(255, 255, 255, 0.1) !important; */
+}
+
+#adminmenu li:hover a {
+    padding-left: 18px !important;
+}
+
+/* Sub Sidebar */
+/* طراحی کلی زیرمنو */
+#adminmenu .wp-submenu {
+    /* background: rgba(255, 255, 255, 0.1) !important; */
+    border-radius: 8px !important;
+    padding: 5px 0 !important;
+    /* transition: all 0.3s ease-in-out; */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* آیتم‌های زیرمنو */
+#adminmenu .wp-submenu li {
+    border-radius: 6px !important;
+    margin: 2px 10px !important;
+    transition: all 0.3s ease-in-out;
+}
+
+/* لینک‌های زیرمنو */
+#adminmenu .wp-submenu a {
+    color: #ffffff !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    padding: 6px 15px !important;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+/* افکت هاور برای آیتم‌های زیرمنو */
+#adminmenu .wp-submenu li:hover {
+    background: rgba(255, 255, 255, 0.2) !important;
+    transform: translateX(5px);
+}
+
+/* افکت هاور برای لینک‌های زیرمنو */
+#adminmenu .wp-submenu li:hover a {
+    padding-left: 20px !important;
+}
+
+/* انیمیشن نرم برای نمایش زیرمنو */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#adminmenu .wp-submenu {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+
+/* طراحی نوار بالای مدیریت */
+#wpadminbar {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) !important;
+    margin: 5px;
+    border-radius: 10px;
+    width: 99.5%;
+}
+
+/* بهبود طراحی دکمه‌های مدیریتی */
+.wp-core-ui .button-primary {
+    background: var(--primary-color) !important;
+    border: none !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease;
+}
+
+.wp-core-ui .button-primary:hover {
+    background: var(--secondary-color) !important;
+}
+
+/* بهینه‌سازی فونت و تایپوگرافی */
+body,
+#adminmenu a,
+.rtl h1,
+.rtl h2,
+.rtl h3,
+.rtl h4,
+.rtl h5,
+.rtl h6,
+#wpadminbar {
+    font-family: Vazir, sans-serif !important;
+    font-feature-settings: "numr";
+}
+
+/* انیمیشن نرم برای سایدبار */
+@keyframes slideIn {
+    from {
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#adminmenu {
+    animation: slideIn 0.5s ease-in-out;
+}
+
+#adminmenu,
+#adminmenuback,
+#adminmenuwrap {
+    background: none;
+}
+
+
+/* Card */
+/* تغییر پس‌زمینه کارت‌ها */
+.postbox {
+    background: #ffffff !important;
+    border: none !important;
+    border-radius: 12px !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1) !important;
+    padding: 15px !important;
+    transition: all 0.3s ease-in-out;
+    font-family: Vazir, sans-serif !important;
+    font-feature-settings: "numr";
+
+}
+
+/* تغییر رنگ هدر کارت‌ها */
+.postbox h2,
+.postbox .hndle {
+    background: var(--primary-color);
+    color: white !important;
+    border-radius: 12px 12px 0 0 !important;
+    font-weight: bold !important;
+}
+
+/* افکت هاور برای کارت‌ها */
+.postbox:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* بهینه‌سازی تایپوگرافی داخل کارت‌ها */
+.postbox p {
+    font-size: 14px !important;
+    color: #333 !important;
+    line-height: 1.6 !important;
+}
+
+/* استایل دکمه‌های داخل کارت‌ها */
+.postbox .button-primary {
+    background: var(--primary-color) !important;
+    border: none !important;
+    border-radius: 6px !important;
+    padding: 8px 15px !important;
+    font-size: 14px !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.postbox .button-primary:hover {
+    background: var(--secondary-color) !important;
+    transform: scale(1.05);
+}
+
+/* انیمیشن نرمی برای ورود کارت‌ها */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.postbox {
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+/* Table */
+/* طراحی کلی جدول */
+.wp-list-table {
+    background: #ffffff !important;
+    border-radius: 12px !important;
+    border: none !important;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08) !important;
+    overflow: hidden !important;
+}
+
+/* بهبود استایل ردیف‌های جدول */
+.wp-list-table tr {
+    border-bottom: 1px solid #e0e0e0 !important;
+    transition: background 0.3s ease-in-out;
+}
+
+.wp-list-table tr:nth-child(even) {
+    background: #f8f9fc !important;
+}
+
+/* افکت هاور برای ردیف‌های جدول */
+.wp-list-table tr:hover {
+    background: rgba(0, 0, 0, 0.03) !important;
+}
+
+/* استایل هدرهای جدول (بدون تغییر رنگ) */
+.wp-list-table thead th {
+    font-weight: bold !important;
+    border: none !important;
+}
+
+/* استایل فوتر جدول (بدون تغییر رنگ) */
+.wp-list-table tfoot th {
+    font-weight: bold !important;
+    border-top: 1px solid #ddd !important;
+}
+
+/* گرد کردن گوشه‌های بالای جدول */
+.wp-list-table thead tr:first-child th:first-child {
+    border-top-left-radius: 12px !important;
+}
+
+.wp-list-table thead tr:first-child th:last-child {
+    border-top-right-radius: 12px !important;
+}
+
+/* گرد کردن گوشه‌های پایین جدول */
+.wp-list-table tfoot tr:last-child th:first-child {
+    border-bottom-left-radius: 12px !important;
+}
+
+.wp-list-table tfoot tr:last-child th:last-child {
+    border-bottom-right-radius: 12px !important;
+}
+
+/* استایل محتوای سلول‌ها */
+.wp-list-table td {
+    padding: 10px 12px !important;
+    font-size: 14px !important;
+    color: #333 !important;
+}
+
+/* استایل دکمه‌های اکشن داخل جدول */
+.wp-list-table .row-actions {
+    font-size: 13px !important;
+}
+
+.wp-list-table .row-actions a {
+    color: var(--primary-color) !important;
+    font-weight: 500 !important;
+    transition: color 0.3s ease-in-out;
+}
+
+.wp-list-table .row-actions a:hover {
+    color: var(--secondary-color) !important;
+}
+
+/* افکت ورود نرم برای جدول */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.wp-list-table {
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+
+/* Inputs */
+/* طراحی کلی input, textarea و select */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="search"],
+input[type="url"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 1px 20px !important;
+    border: 2px solid #ddd !important;
+    border-radius: 8px !important;
+    font-size: 14px !important;
+    transition: all 0.3s ease-in-out;
+}
+
+/* تغییر رنگ و سایه هنگام فوکوس */
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: var(--primary-color) !important;
+    box-shadow: 0px 0px 8px rgba(106, 17, 203, 0.3) !important;
+    outline: none !important;
+}
+
+/* تغییر استایل دکمه‌های وردپرس */
+.wp-core-ui .button,
+.wp-core-ui .button-primary {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) !important;
+    color: white !important;
+    font-weight: 500 !important;
+    padding: 2px 10px !important;
+    border: none !important;
+    border-radius: 20px !important;
+}
+
+/* افکت هاور برای دکمه‌ها */
+.wp-core-ui .button:hover,
+.wp-core-ui .button-primary:hover {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color)) !important;
+}
+
+#screen-meta-links button {
+    background: none !important;
+    border: none !important;
+    color: var(--primary-color) !important;
+}
+
+/* استایل برای دکمه‌های ثانویه */
+.wp-core-ui .button-secondary {
+    background: #f8f9fc !important;
+    color: #333 !important;
+    border: 2px solid #ddd !important;
+    border-radius: 8px !important;
+    padding: 9px 14px !important;
+    transition: all 0.3s ease-in-out;
+}
+
+/* افکت هاور برای دکمه‌های ثانویه */
+.wp-core-ui .button-secondary:hover {
+    border-color: var(--primary-color) !important;
+    color: var(--primary-color) !important;
+}
+
+/* بهینه‌سازی ارتفاع و ظاهر textarea */
+textarea {
+    min-height: 100px !important;
+    resize: vertical !important;
+}
+
+/* استایل چک‌باکس‌ها و رادیوباتن‌ها */
+input[type="checkbox"],
+input[type="radio"] {
+    accent-color: var(--primary-color) !important;
+    width: 18px !important;
+    height: 18px !important;
+}
+
+/* افکت ورود نرم برای ورودی‌ها */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+input,
+textarea,
+select {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.subsubsub {
+    font-size: 14px;
+    font-weight: 600;
+    color: #6a4c9c;
+    /* رنگ بنفش ملایم */
+    background-color: #f5f5f5;
+    /* پس‌زمینه خاکی روشن */
+    padding: 8px 12px;
+    border-radius: 6px;
+    /* گوشه‌های گرد */
+    transition: all 0.3s ease;
+    /* افکت روان برای تغییرات */
+}
+
+.subsubsub:hover {
+    background-color: #e0d9f7;
+    /* رنگ پس‌زمینه هنگام هاور */
+    color: #4a3481;
+    /* رنگ متن هنگام هاور */
+    text-decoration: underline;
+    /* خط زیر متن هنگام هاور */
+}
+
+.subsubsub a {
+    color: inherit;
+    /* رنگ لینک‌ها به ارث بردن از رنگ والد */
+    text-decoration: none;
+    /* حذف خط زیر لینک‌ها */
+    transition: color 0.3s ease;
+}
+
+.subsubsub a:hover {
+    color: #4a3481;
+    /* رنگ لینک‌ها هنگام هاور */
+}
+
+
+.page-title-action {
+    display: inline-block;
+    background-color: #6a4c9c;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.page-title-action:hover {
+    background-color: #4a3481;
+    /* رنگ تیره‌تر برای هاور */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* سایه ملایم برای هاور */
+    transform: translateY(-2px);
+    /* جابجایی کمی برای افکت 3D */
+}
+
+.page-title-action:focus {
+    outline: none;
+    /* حذف outline پیش‌فرض */
+    box-shadow: 0 0 0 3px rgba(106, 76, 156, 0.5);
+    /* سایه در اطراف هنگام فوکوس */
+}
+
+/* User */
+/* استایل کلی بخش مدیریت کاربر */
+#wp-admin-bar-user-actions {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 8px !important;
+    padding: 10px !important;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* آیتم‌های داخل منوی کاربر */
+#wp-admin-bar-user-actions .ab-item {
+    color: #ffffff !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    padding: 8px 15px !important;
+    display: block;
+    transition: all 0.3s ease-in-out;
+    border-radius: 6px !important;
+    font-family: Vazir, sans-serif !important;
+}
+
+/* افکت هاور برای آیتم‌های منو */
+#wp-admin-bar-user-actions .ab-item:hover {
+    background: rgba(255, 255, 255, 0.2) !important;
+    transform: translateX(5px);
+}
+
+/* طراحی دکمه خروج (Logout) */
+#wp-admin-bar-logout {
+    background: rgba(255, 0, 0, 0.2) !important;
+    border-radius: 6px !important;
+}
+
+#wp-admin-bar-logout .ab-item {
+    color: #ff4d4d !important;
+    font-weight: bold !important;
+    transition: all 0.3s ease-in-out;
+}
+
+#wp-admin-bar-logout .ab-item:hover {
+    background: rgba(255, 0, 0, 0.4) !important;
+    color: #fff !important;
+}
+
+/* انیمیشن نرم برای ورود منو */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#wp-admin-bar-user-actions {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Update Table */
+/* تغییر استایل کلی جدول */
+.wp-list-table.plugins {
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+/* تغییر استایل ردیف‌های جدول */
+.wp-list-table.plugins tr {
+    background: transparent !important;
+    transition: all 0.3s ease-in-out;
+}
+
+/* تغییر استایل سلول‌های جدول */
+.wp-list-table.plugins td,
+.wp-list-table.plugins th {
+    padding: 12px 15px !important;
+    font-size: 14px !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* استایل سرتیتر جدول */
+.wp-list-table.plugins thead th {
+    
+}
+
+/* افکت هاور برای ردیف‌های جدول */
+.wp-list-table.plugins tr:hover {
+    background: rgba(230, 239, 255, 0.5) !important;
+    transform: translateY(-2px);
+}
+
+/* دکمه‌های جدول (به‌روزرسانی افزونه‌ها) */
+.plugins a.update-link {
+    background: #4a90e2 !important;
+    color: white !important;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.plugins a.update-link:hover {
+    background: #357bd8 !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* استایل پیام‌های بروزرسانی */
+.update-message {
+    background: rgba(255, 245, 200, 0.8);
+    border-left: 5px solid #ffb400;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #8a6700;
+    margin-top: 8px;
+}
+
+
+
+/*  */
+.search-box {
+    flex-wrap: nowrap !important;
+}
+
+.actions {
+    display: flex;
+}
+
+#adminmenu div.wp-menu-name {
+    padding: 0;
+}
+
+div.wp-menu-image::before {
+    padding: 0 !important;
+}
+
+#adminmenu .wp-menu-image img {
+    padding: 0;
+}
+
+/* استایل کلی پیام خطا */
+.error {
+    background: rgba(255, 230, 230, 0.9);
+    color: #D93025;
+    border-left: 5px solid #D93025;
+    padding: 12px 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease-in-out;
+}
+
+/* افزودن آیکون هشدار */
+.error::before {
+    content: "⚠️";
+    font-size: 18px;
+}
+
+/* افکت هاور برای جلوه‌ی زیباتر */
+.error:hover {
+    background: rgba(255, 200, 200, 0.95);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+} 
+
+/*  */
+.folded #adminmenu, .folded #adminmenu li.menu-top, .folded #adminmenuback, .folded #adminmenuwrap {
+    width: 43px !important;
+}
+
+#wpfooter {
+    display: none;
+}
+
+.media-upload-form .notice, .media-upload-form div.error, .wrap .notice, .wrap div.error, .wrap div.updated {
+    border-radius: 5px;
+}
+
+#adminmenu div.wp-menu-image {
+    height: auto !important;
+}
+
+.rtl #wpadminbar * {
+    font-family: Vazir, sans-serif !important;
+}
